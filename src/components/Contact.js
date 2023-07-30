@@ -26,13 +26,13 @@ export const Contact = () => {
     }
 
     return (
-        <section className="contact" id="connect">
+        <section className="contact">
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
                         <img src={contactImg}></img>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6}  id="connect">
                         <h2> Get in Touch</h2>
                         <form onSubmit={handleSubmit}>
                             <Row>

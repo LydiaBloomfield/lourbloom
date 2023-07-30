@@ -7,6 +7,19 @@ import meter3 from "../assets/images/meter3.svg";
 // import arrow1 from "../assets/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/images/color-sharp.png"
+import java from "../assets/images/technologies/java.png"
+import cpp from "../assets/images/technologies/c++.svg"
+import python from "../assets/images/technologies/python.png"
+import javascript from "../assets/images/technologies/javascript.png"
+import css from "../assets/images/technologies/css.png"
+import html from "../assets/images/technologies/html.png"
+import git from "../assets/images/technologies/git.png"
+import react from "../assets/images/technologies/react.png"
+import sql from "../assets/images/technologies/sql.png"
+import mongodb from "../assets/images/technologies/mongodb.png"
+import node from "../assets/images/technologies/node.png"
+import gosu from "../assets/images/technologies/gosu.png"
+import R from "../assets/images/technologies/R.png"
 
 export const Skills = () => {
     const responsive = {
@@ -17,11 +30,11 @@ export const Skills = () => {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 7
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 3
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
@@ -29,6 +42,7 @@ export const Skills = () => {
         }
       };
 
+      //FIX implement scrolling on carousel
       return(
         <section className="skill" id = "skills">
             <Container>
@@ -36,25 +50,62 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                Technologies
                             </h2>
                             <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="image"/>
-                                    <h5> Web Development</h5>
+                                    <img src={java} alt="image"/>
+                                    <h5> Java </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="image"/>
-                                    <h5> Brand Identity </h5>
+                                    <img src={python} alt="image"/>
+                                    <h5> Python </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="image"/>
-                                    <h5> Logo Design</h5>
+                                    <img src={cpp} alt="image"/>
+                                    <h5> C++ </h5>
+                                </div>
+                                {/* FIX this one */}
+                                <div className="item">
+                                    <img src={R} alt="image"/>
+                                    <h5> R </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="image"/>
-                                    <h5> Testing</h5>
+                                    <img src={javascript} alt="image"/>
+                                    <h5> Javascript</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={react} alt="image"/>
+                                    <h5> React</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={html} alt="image"/>
+                                    <h5> html</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={css} alt="image"/>
+                                    <h5> CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={sql} alt="image"/>
+                                    <h5> SQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={git} alt="image"/>
+                                    <h5> git</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={mongodb} alt="image"/>
+                                    <h5> mongoDB</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={node} alt="image"/>
+                                    <h5> node.JS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={gosu} alt="image"/>
+                                    <h5> Gosu </h5>
                                 </div>
                             </Carousel>
                         </div>

@@ -113,7 +113,7 @@ export const Projects = () => {
 
 
 
-        <div className="portfolio" id="portfolio">
+        <div className="portfolio" id="projects">
             {/* heading */}
             <span style={{ color: 'white' }}>Recent Projects</span>
 

@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Nav } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from "../assets/images/header-img.svg"
 import { useEffect, useState } from "react"
@@ -41,6 +41,7 @@ export const Banner = () => {
         }
     }
 
+
     return (
         <section className="banner" id="home">
             <Container>
@@ -53,8 +54,14 @@ export const Banner = () => {
                                 <div className={isVisible ? "animate_animated animate_bounce" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{"Hi I'm Lydia "}<span className="wrap">{text}</span></h1>
-                                    <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text</p>
-                                    <button onClick={() => console.log('connect')}> Let's connect <ArrowRightCircle size={25} /></button>
+                                    <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy 
+                                        text dummy text dummy text dummy text dummy text dummy text dummy text dummy text 
+                                        dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text
+                                        Take a look at my <a href=""> resume </a></p>
+                                    
+                                    {/* FIX styling of connect button */}
+                                    <Nav.Link className="" href="#connect"><button onClick={() => console.log('connect')}> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
+                                    
                                 </div>}
                         </TrackVisibility>
                     </Col>
