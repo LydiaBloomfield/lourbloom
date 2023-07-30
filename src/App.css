@@ -1,4 +1,4 @@
-/******* Custom Font ************/
+/************ Custom Font ************/
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -58,6 +58,10 @@ img {
   height: auto;
 }
 
+.logo{
+  width: 10%;
+}
+
 button {
   border: 0;
   background-color: transparent;
@@ -90,6 +94,11 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+.nav-parent{
+  display: inline-block;
+  margin-right: auto;
+  justify-content: space-between;
+}
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -110,21 +119,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 span.navbar-text {
-    display: inline-block;
-    /* float: right; */
+    display: flex;
     align-items: center;
 }
 .social-icon {
     display: inline-block;
-    /* float: right; */
-    margin-left: 14px;
+    margin-left: 14px;   
 }
-
-.nav-parent {
-  display: flex;
-  justify-content: space-between;
-}
-
 .social-icon a {
     width: 42px;
     height: 42px;
@@ -132,7 +133,7 @@ span.navbar-text {
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -169,7 +170,6 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
-
 .navbar-text button span {
   z-index: 1;
 }
@@ -360,7 +360,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
-
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -370,7 +369,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -379,10 +377,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 
+ProjectCard{
+  width: 33%;
+}
+
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
-
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
@@ -554,7 +555,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  /* background-image: url('../assets/images/footer-bg.png'); */
+  background-image: url('./assets/images/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
