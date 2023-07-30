@@ -47,8 +47,8 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
               {/* <div> */}
                 <div className="social-icon">
-                  <a href="https://www.linkedin.com/in/lydia-bloomfield"><img src={navIcon1} alt="" /></a>
-                  <a href="https://github.com/LydiaBloomfield"><img src={navIcon2} alt="" /></a>
+                  <a href="https://www.linkedin.com/in/lydia-bloomfield" target="_blank"><img src={navIcon1} alt="" /></a>
+                  <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
                   <a href="#"><img src={navIcon3} alt="" /></a>
                 </div>
               {/* </div> */}

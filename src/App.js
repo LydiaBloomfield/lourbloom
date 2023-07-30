@@ -7,6 +7,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
+  // FIX icon on tabs in web browser w a logo
   return (
     <div className="App">
       <NavBar/>
