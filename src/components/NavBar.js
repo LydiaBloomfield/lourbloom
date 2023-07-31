@@ -30,39 +30,25 @@ export const NavBar = () => {
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Nav className="">
-          <Navbar.Brand href="#home">
-
-          </Navbar.Brand>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Col> */}
-          <Navbar.Collapse id="basic-navbar-nav">
-          <div className="nav-parent">
+      <Nav className="test">
+          {/* <div className="nav-parent"> */}
             <img className="logo" sm={6} src={logo} alt="Logo" />
 
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technologies</Nav.Link>
-              <Nav.Link href="#projects" className="navbar-link">Experience</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link Link to={"/resume"} className='navbar-link'>Resume</Nav.Link>
-              <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link>
-
-
-                <div className="social-icon">
-                  <a href="https://www.linkedin.com/in/lydia-bloomfield" target="_blank"><img src={navIcon1} alt="" /></a>
-                  <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
-                  <a href="#connect"><img src={navIcon3} alt="" /></a>
-                  <button onClick={() => console.log('connect')}>Resume</button>
-                </div>
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technologies</Nav.Link>
+            <Nav.Link href="#projects" className="navbar-link">Experience</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link Link to={"/resume"} className='navbar-link'>Resume</Nav.Link>
+            {/* <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link> */}
+            
+            <div className="social-icon">
+              <a href="https://www.linkedin.com/in/lydia-bloomfield" target="_blank"><img src={navIcon1} alt="" /></a>
+              <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
+              <a href="#connect"><img src={navIcon3} alt="" /></a>
+              <button onClick={() => console.log('connect')}>Resume</button>
             </div>
-
-          </Navbar.Collapse>
-          {/* </Col> */}
-        </Nav>
-      </Container>
+          {/* </div> */}
+      </Nav>
     </Navbar>
 
   )
