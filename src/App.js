@@ -5,10 +5,13 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Resume } from './components/Resume';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   // FIX icon on tabs in web browser w a logo
   return (
+
     <div className="App">
       <NavBar/>
       <Banner/>
@@ -17,6 +20,7 @@ function App() {
       <Contact/>
       <Footer/>
     </div>
+
   );
 }
 

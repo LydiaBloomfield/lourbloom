@@ -4,6 +4,7 @@ import headerImg from "../assets/images/header-img.svg"
 import { useEffect, useState } from "react"
 import TrackVisibility from "react-on-screen"
 import { isVisible } from "@testing-library/user-event/dist/utils"
+import resume from "../assets/resume.pdf"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -53,11 +54,13 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate_animated animate_bounce" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{"Hi I'm Lydia "}<br/><span className="wrap">{text}</span></h1>
+                                    <h1>{"Hi I'm Lydia "}<br/>
+                                    {/* <span className="wrap">{text}</span> */}
+                                    </h1>
                                     <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy 
                                         text dummy text dummy text dummy text dummy text dummy text dummy text dummy text 
                                         dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text
-                                        Take a look at my <a href=""> resume </a></p>
+                                        Take a look at my <a href={resume} target="_blank"> resume </a></p>
                                     
                                     {/* FIX styling of connect button */}
                                     <Nav.Link className="" href="#connect"><button onClick={() => console.log('connect')}> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
