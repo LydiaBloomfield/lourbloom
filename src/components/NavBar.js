@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav, Col, Row } from "react-bootstrap";
+import { Navbar, Container, Nav, Col, Row} from "react-bootstrap";
 import { useState, useEffect } from "react";
 import logo from '../assets/images/logo.svg';
 import navIcon1 from '../assets/images/nav-icon1.svg';
@@ -6,6 +6,9 @@ import navIcon2 from '../assets/images/nav-icon2.svg';
 import navIcon3 from '../assets/images/nav-icon3.svg';
 import { HashLink } from "react-router-hash-link";
 import { Switch, Route, Link, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -38,9 +41,8 @@ export const NavBar = () => {
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technologies</Nav.Link>
             <Nav.Link href="#projects" className="navbar-link">Experience</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            <Nav.Link Link to={"/resume"} className='navbar-link'>Resume</Nav.Link>
-            {/* <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link> */}
-            
+            <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link>
+
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/lydia-bloomfield" target="_blank"><img src={navIcon1} alt="" /></a>
               <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
@@ -50,6 +52,9 @@ export const NavBar = () => {
           {/* </div> */}
       </Nav>
     </Navbar>
+
+
+
 
   )
 }

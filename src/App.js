@@ -7,9 +7,18 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Resume } from './components/Resume';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 function App() {
   // FIX icon on tabs in web browser w a logo
+
+  useEffect(()=>{
+    fetch("/api")
+    .then((res) => res.json())
+    .then((data) => {console.log(data)})
+  }, [])
+
   return (
 
     <div className="App">

@@ -101,14 +101,6 @@ p.danger {
 
 /************ Navbar Css ************/
 
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  color: #fff;
-}
-
 nav.navbar {
   padding: 10px 0 0 5px;
   position: fixed;
@@ -117,6 +109,7 @@ nav.navbar {
   z-index: 9999;
   transition: 0.32s ease-in-out;
   display: flex;
+  justify-content: space-between;
 }
 
 .nav-parent {
@@ -156,6 +149,7 @@ span.navbar-text {
 
 .social-icon {
   /* display: inline-block; */
+  float: right;
   margin-left: 14px;
 }
 
