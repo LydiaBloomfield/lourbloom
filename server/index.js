@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-application.use(express.static(path.resolve(_dirname, '../build')))
+app.use(express.static(path.resolve(_dirname, '../build')))
 app.use(cors())
 app.use(bodyParser.json())
 
