@@ -11,7 +11,7 @@ app.use(express.static(path.resolve(__dirname, '../build')))
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get("/api", (req,res) =>{
+app.get("lourbloom/api", (req,res) =>{
     res.json({message: "Hello from server"})
 })
 
@@ -31,7 +31,7 @@ contactEmail.verify((error) =>{
     }
 })
 
-app.post("/api/contact", bodyParser.urlencoded({extended: false}), (req, res) => {
+app.post("lourbloom/api/contact", bodyParser.urlencoded({extended: false}), (req, res) => {
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body. message;
