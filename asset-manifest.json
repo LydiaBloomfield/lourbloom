@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lourbloom/static/css/main.802b682b.css",
-    "main.js": "/lourbloom/static/js/main.1511455a.js",
+    "main.css": "/lourbloom/static/css/main.18abc89a.css",
+    "main.js": "/lourbloom/static/js/main.ac752edc.js",
     "static/js/787.ff376191.chunk.js": "/lourbloom/static/js/787.ff376191.chunk.js",
     "static/media/color-sharp.png": "/lourbloom/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/lourbloom/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -36,12 +36,12 @@
     "index.html": "/lourbloom/index.html",
     "static/media/nav-icon1.svg": "/lourbloom/static/media/nav-icon1.f49dc1c4e0fdf9f01690dfc43590d569.svg",
     "static/media/nav-icon3.svg": "/lourbloom/static/media/nav-icon3.6fcc2ec7e4a19fddfbf6cf6e973e5872.svg",
-    "main.802b682b.css.map": "/lourbloom/static/css/main.802b682b.css.map",
-    "main.1511455a.js.map": "/lourbloom/static/js/main.1511455a.js.map",
+    "main.18abc89a.css.map": "/lourbloom/static/css/main.18abc89a.css.map",
+    "main.ac752edc.js.map": "/lourbloom/static/js/main.ac752edc.js.map",
     "787.ff376191.chunk.js.map": "/lourbloom/static/js/787.ff376191.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.802b682b.css",
-    "static/js/main.1511455a.js"
+    "static/css/main.18abc89a.css",
+    "static/js/main.ac752edc.js"
   ]
 }
