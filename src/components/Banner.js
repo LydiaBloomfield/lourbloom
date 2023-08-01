@@ -61,10 +61,7 @@ export const Banner = () => {
                                         text dummy text dummy text dummy text dummy text dummy text dummy text dummy text 
                                         dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text
                                         Take a look at my <a href={resume} target="_blank"> resume </a></p>
-                                    
-                                    {/* FIX styling of connect button */}
                                     <Nav.Link className="" href="#connect"><button onClick={() => console.log('connect')}> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
-                                    
                                 </div>}
                         </TrackVisibility>
                     </Col>

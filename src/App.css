@@ -60,6 +60,10 @@ ul {
   text-decoration: none;
 }
 
+a:active{
+  color: #fff;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -98,6 +102,8 @@ p.success {
 p.danger {
   color: red;
 }
+
+.ignore-css{all:unset;}
 
 /************ Navbar Css ************/
 
@@ -191,7 +197,7 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.social-icon button{
+nav button{
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -206,7 +212,7 @@ span.navbar-text {
 
 }
 
-.social-icon button:hover {
+nav button:hover {
   background-color: #fff;
   color: #000;
 }

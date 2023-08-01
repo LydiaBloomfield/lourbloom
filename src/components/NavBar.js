@@ -9,6 +9,8 @@ import { Switch, Route, Link, Redirect } from "react-router-dom";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import resume from "../assets/resume.pdf"
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -31,6 +33,7 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  // FIX make resume page its own route instead of link to external 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Nav className="test">
@@ -39,16 +42,16 @@ export const NavBar = () => {
 
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technologies</Nav.Link>
-            <Nav.Link href="#projects" className="navbar-link">Experience</Nav.Link>
+            <Nav.Link href="#" className="navbar-link">Experience</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link>
-
+            
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/lydia-bloomfield" target="_blank"><img src={navIcon1} alt="" /></a>
               <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
               <a href="#connect"><img src={navIcon3} alt="" /></a>
-              <button onClick={() => console.log('connect')}>Resume</button>
             </div>
+            <button onClick={() => console.log('connect')}><a href={resume} target="_blank" className="ignore-css">Resume</a> </button>
           {/* </div> */}
       </Nav>
     </Navbar>

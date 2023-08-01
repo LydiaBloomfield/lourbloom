@@ -8,6 +8,7 @@ import { Footer } from './components/Footer';
 import { Resume } from './components/Resume';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Experience } from './components/Experience';
 
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
     <div className="App">
       <NavBar/>
       <Banner/>
-      <Skills/>
+      <Experience/>
       <Projects/>
+      <Skills/>
       <Contact/>
       <Footer/>
     </div>
