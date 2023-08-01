@@ -5,18 +5,20 @@ const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(express.static(path.resolve(__dirname, '../build')))
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get("/", (req,res) =>{
+const URL = "https://portfolio-contact-form-vv0z.onrender.com"
+
+app.get(URL + "/", (req,res) =>{
     res.json({message: "Hello from server"})
 })
 
 
-app.get("/api", (req,res) =>{
+app.get(URL + "/api", (req,res) =>{
     res.json({message: "Hello from server"})
 })
 
@@ -36,7 +38,7 @@ contactEmail.verify((error) =>{
     }
 })
 
-app.post("/api/contact", bodyParser.urlencoded({extended: false}), (req, res) => {
+app.post(URL + "/api/contact", bodyParser.urlencoded({extended: false}), (req, res) => {
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body. message;
