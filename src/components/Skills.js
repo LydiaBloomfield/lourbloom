@@ -19,7 +19,6 @@ import R from "../assets/images/technologies/R.png"
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -47,7 +46,7 @@ export const Skills = () => {
                             <h2>
                                 Technologies
                             </h2>
-                            <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text</p>
+                            <p></p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={java} alt="image"/>

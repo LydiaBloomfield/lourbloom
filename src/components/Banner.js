@@ -57,16 +57,12 @@ export const Banner = () => {
                                     <h1>{"Hi I'm Lydia "}<br/>
                                     {/* <span className="wrap">{text}</span> */}
                                     </h1>
-                                    <p>dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy 
-                                        text dummy text dummy text dummy text dummy text dummy text dummy text dummy text 
-                                        dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text
-                                        Take a look at my <a href={resume} target="_blank"> resume </a></p>
+                                    <p> This is the work-in-progress accumulation of my past work as well as a testing ground for any passion projects. Here you can find my experience, familiar technologies, and recent projects. Please feel free to look around or glance at my <a href={resume} className="resume-link" target="_blank"> resume. </a></p>
                                     <Nav.Link className="" href="#connect"><button onClick={() => console.log('connect')}> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
                                 </div>}
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        {/* <img src={headerImg} alt="Header Img" /> */}
                     </Col>
                 </Row>
             </Container>

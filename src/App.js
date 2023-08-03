@@ -12,8 +12,6 @@ import { Experience } from './components/Experience';
 
 
 function App() {
-  // FIX icon on tabs in web browser w a logo
-
   useEffect(()=>{
     fetch("/api")
     .then((res) => res.json())
@@ -26,7 +24,9 @@ function App() {
       <NavBar/>
       <Banner/>
       <Experience/>
+      <br></br>
       <Projects/>
+      <br></br>
       <Skills/>
       <Contact/>
       <Footer/>

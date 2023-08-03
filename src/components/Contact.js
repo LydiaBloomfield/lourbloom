@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg"
+import copy from "../assets/images/copy-icon.svg"
 
 export const Contact = () => {
     const formInitialDetails = {
@@ -15,13 +16,14 @@ export const Contact = () => {
     const [buttonText, setButtonText] = useState('Send');
     const [status, setStatus] = useState({})
 
-    const onFormUpdate = (category, value) =>{
+    const onFormUpdate = (category, value) => {
         setFormDetails({
-            ...formDetails, [category] : value }
+            ...formDetails, [category]: value
+        }
         )
     }
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = async (e) => {
         console.log(formDetails)
         e.preventDefault();
         setButtonText("Sending...")
@@ -35,11 +37,18 @@ export const Contact = () => {
         let result = await response.json();
         setButtonText("Send");
         setFormDetails(formInitialDetails);
-        if(result.code == 200){
-            setStatus({success: true, message: "Message sent successfully"})
-        } else{
-            setStatus({success: false, message: "Something went wrong!"})
+        if (result.code == 200) {
+            setStatus({ success: true, message: "Message sent successfully" })
+        } else {
+            setStatus({ success: false, message: "Something went wrong!" })
         }
+    }
+
+    const handleCopyPersonal = () => {
+        navigator.clipboard.writeText("lydia.r.bloom@gmail.com")
+    }
+    const handleCopySchool = () => {
+        navigator.clipboard.writeText("lydia.r.bloom@gmail.com")
     }
 
     return (
@@ -49,9 +58,9 @@ export const Contact = () => {
                     <Col md={6}>
                         {/* <img src={contactImg}></img> */}
                     </Col>
-                    <Col md={6}  id="connect">
+                    <Col md={6} id="connect">
                         <h2> Get in Touch</h2>
-                        <form onSubmit={handleSubmit}>
+                        {/* <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder= "First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)}></input>
@@ -76,7 +85,12 @@ export const Contact = () => {
                                     </Col>
                                 }
                             </Row>
-                        </form>
+                        </form> */}
+                        <div className="inline">
+                            <h1 className="inline">lydia.r.bloom@gmail.com <img className="contact-icon" onClick={handleCopyPersonal} style={{width:30, height:30}}src={copy}/></h1>
+                            <br></br>
+                            <h1 className="inline">lydia.r.bloomfield-1@ou.edu <img className="contact-icon" onClick={handleCopySchool} style={{width:30, height:30}}src={copy}/></h1>
+                        </div>
                     </Col>
                 </Row>
             </Container>
