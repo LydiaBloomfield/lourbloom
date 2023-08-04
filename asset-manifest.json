@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/lourbloom/static/css/main.681d14c4.css",
-    "main.js": "/lourbloom/static/js/main.cc7e3e8f.js",
+    "main.css": "/lourbloom/static/css/main.e7cae9f2.css",
+    "main.js": "/lourbloom/static/js/main.86cecbb9.js",
     "static/js/787.ff376191.chunk.js": "/lourbloom/static/js/787.ff376191.chunk.js",
     "static/media/color-sharp.png": "/lourbloom/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/lourbloom/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/project-img3.png": "/lourbloom/static/media/project-img3.9de6b640cddf62cb64c1.png",
     "static/media/header-img.svg": "/lourbloom/static/media/header-img.eade309627f3a589600eaf0f348e34ab.svg",
     "static/media/resume.pdf": "/lourbloom/static/media/resume.f4c974c4f01ee67eaa82.pdf",
-    "static/media/project-img1.png": "/lourbloom/static/media/project-img1.90f1fa75e882f103459a.png",
     "static/media/localhost_3000_dashboard.png": "/lourbloom/static/media/localhost_3000_dashboard.bef14f8b442f180d3710.png",
     "static/media/java.png": "/lourbloom/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/CentraNo2-Bold.ttf": "/lourbloom/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -18,13 +17,11 @@
     "static/media/footer-bg.png": "/lourbloom/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/css.png": "/lourbloom/static/media/css.60bd5075068a1458b3fb.png",
     "static/media/R.png": "/lourbloom/static/media/R.3925a9d915bef82cbc65.png",
-    "static/media/proj-img1.jpg": "/lourbloom/static/media/proj-img1.f9890b87ac4b3b74acb2.jpg",
     "static/media/contact-img.svg": "/lourbloom/static/media/contact-img.1c8af4bc3e40bd32fa2809c1644b3cf7.svg",
     "static/media/sql.png": "/lourbloom/static/media/sql.664a0ec214eec0cbd541.png",
     "static/media/python.png": "/lourbloom/static/media/python.c2212362aaa390acc02a.png",
     "static/media/javascript.png": "/lourbloom/static/media/javascript.2e10b2a247e94504d12c.png",
     "static/media/mongodb.png": "/lourbloom/static/media/mongodb.7a16fc61d457c9e340e2.png",
-    "static/media/project-img2.png": "/lourbloom/static/media/project-img2.f4510de1532d30a4741e.png",
     "static/media/react.png": "/lourbloom/static/media/react.e67fc797206f883619a5.png",
     "static/media/revicons.eot": "/lourbloom/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/lourbloom/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -38,12 +35,12 @@
     "index.html": "/lourbloom/index.html",
     "static/media/nav-icon1.svg": "/lourbloom/static/media/nav-icon1.f49dc1c4e0fdf9f01690dfc43590d569.svg",
     "static/media/nav-icon3.svg": "/lourbloom/static/media/nav-icon3.6fcc2ec7e4a19fddfbf6cf6e973e5872.svg",
-    "main.681d14c4.css.map": "/lourbloom/static/css/main.681d14c4.css.map",
-    "main.cc7e3e8f.js.map": "/lourbloom/static/js/main.cc7e3e8f.js.map",
+    "main.e7cae9f2.css.map": "/lourbloom/static/css/main.e7cae9f2.css.map",
+    "main.86cecbb9.js.map": "/lourbloom/static/js/main.86cecbb9.js.map",
     "787.ff376191.chunk.js.map": "/lourbloom/static/js/787.ff376191.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.681d14c4.css",
-    "static/js/main.cc7e3e8f.js"
+    "static/css/main.e7cae9f2.css",
+    "static/js/main.86cecbb9.js"
   ]
 }
