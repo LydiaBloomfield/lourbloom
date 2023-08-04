@@ -47,12 +47,12 @@ export const Projects = () => {
                     <a href="https://github.com/LydiaBloomfield/Carry-On" target="_blank"><img src={fivehun} alt="" /></a>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <h3> Stack Farm Overflow </h3>
-                    <a href="https://github.com/Chaseforyourlife/HackDay2023" target="_blank"><img src={altprojImg2} alt="" /> </a>
-                </SwiperSlide>
-                <SwiperSlide>
                     <h3> Write to Image </h3>
                     <img src={projImg3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <h3> Stack Farm Overflow </h3>
+                    <a href="https://github.com/Chaseforyourlife/HackDay2023" target="_blank"><img src={altprojImg2} alt="" /> </a>
                 </SwiperSlide>
             </Swiper>
         </div>

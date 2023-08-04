@@ -11,7 +11,7 @@ export const Footer = () => {
             <Container>
                 <Row className="flex">
                     <Col sm={6}>
-                        <img src={logo2} style={{width:100, height:100}}alt="Logo"></img>
+                        {/* <img src={logo2} style={{width:100, height:100}}alt="Logo"></img> */}
                     </Col>
                     <Col sm={6} className=''>
                         <p> Copyright 2023. All Rights Reserved.</p>

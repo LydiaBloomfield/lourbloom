@@ -58,7 +58,7 @@ export const Banner = () => {
                                     {/* <span className="wrap">{text}</span> */}
                                     </h1>
                                     <p> This is the work-in-progress accumulation of my past work as well as a testing ground for any passion projects. Here you can find my experience, familiar technologies, and recent projects. Please feel free to look around or glance at my <a href={resume} className="resume-link" target="_blank"> resume. </a></p>
-                                    <Nav.Link className="" href="#connect"><button onClick={() => console.log('connect')}> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
+                                    <Nav.Link className="" href="#connect"><button> Let's connect <Nav.Link href="#connect"><ArrowRightCircle size={25} /></Nav.Link></button></Nav.Link>
                                 </div>}
                         </TrackVisibility>
                     </Col>
