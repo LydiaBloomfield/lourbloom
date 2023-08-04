@@ -7,25 +7,25 @@ export const Experience = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="experience-bx">
+                        <div>
                             <h1>
                                 Experience
                             </h1>
-                            <section className="2xl:w-3/5 lg:w-11/12 w-full text-gray-700 2xl:text-2xl md:text-xl text-lg relative z-10 2xl:mx-auto md:mb-12 mb-10">
-                                <div className="company">
-                                    <h1 className="">State Farm</h1>
-                                    <p className="">May 2023 - Aug 2023</p>
+                            <section>
+                                <div className="experience-company">
+                                    <h2>State Farm</h2>
+                                    <p>May 2023 - Aug 2023</p>
                                 </div>
-                                <div className="my-2 sm:text-xl text-lg 2xl:text-2xl">
+                                <div className="experience-team">
                                     Software Engineering Intern, DevOps Enablement Team
                                 </div>
                                 <br></br>
-                                <ul className='list-disc list-outside font-light'>
+                                <ul className='experience-desc'>
                                     <li>
                                         Fully developed the API for a tool with 75,000 data entries and capable of being used by the entire P&C Auto/Fire division of the company.
                                     </li>
                                     <li>
-                                    Implemented front and back end components utilizing Python, ReactJS, Flask, and SQL.
+                                        Implemented front and back end components utilizing Python, ReactJS, Flask, and SQL.
                                     </li>
                                     <li>
                                         Created a consultation request capability allowing consumers of the team's product to request assistance. Requests directly generate gitLab issues for the team's review.
@@ -36,21 +36,21 @@ export const Experience = () => {
                                 </ul>
                             </section>
 
-                            <section className="2xl:w-3/5 lg:w-11/12 w-full text-gray-700 2xl:text-2xl md:text-xl text-lg relative z-10 2xl:mx-auto md:mb-12 mb-10">
-                                <div className="company">
-                                    <h1 className="">State Farm</h1>
-                                    <p className="">May 2022 - Aug 2022</p>
+                            <section>
+                                <div className="experience-company">
+                                    <h2>State Farm</h2>
+                                    <p>May 2022 - Aug 2022</p>
                                 </div>
-                                <div className="my-2 sm:text-xl text-lg 2xl:text-2xl">
+                                <div className="experience-team">
                                     Software Engineering Intern, Customer Data Team
                                 </div>
                                 <br></br>
-                                <ul className='list-disc list-outside font-light'>
+                                <ul className='experience-desc'>
                                     <li>
-                                    Enhanced Customer Data Integrator and Policy Center.
+                                        Enhanced Customer Data Integrator and Policy Center.
                                     </li>
                                     <li>
-                                    Worked with Java and Guidewire-specific Gosu for issues relating to performance improvements, test cases, and consolidation across codebases.                                   
+                                        Worked with Java and Guidewire-specific Gosu for issues relating to performance improvements, test cases, and consolidation across codebases.
                                     </li>
                                 </ul>
                             </section>

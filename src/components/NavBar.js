@@ -52,6 +52,7 @@ export const NavBar = () => {
         <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technologies</Nav.Link>
+        <Nav.Link href={resume} className="navbar-link" target="_blank">Resume</Nav.Link>
         {/* <Nav.Link Link to={"/timeline"} className='navbar-link'>Timeline</Nav.Link> */}
 
         <div className="social-icon">
@@ -59,8 +60,6 @@ export const NavBar = () => {
         <a href="https://github.com/LydiaBloomfield" target="_blank"><img src={navIcon2} alt="" /></a>
         <a href="#connect"><img src={navIcon3} alt="" /></a>
       </div>
-
-      <button><a href={resume} target="_blank" className="ignore-css">Resume</a> </button>
       </Nav>
     </Navbar>
   )

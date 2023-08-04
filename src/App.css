@@ -105,11 +105,19 @@ p.danger {
 
 /************ Navbar Css ************/
 
+@media screen and (max-width: 888px) {
+  .navbar-link {
+    display: none;
+  }
+}
+
+
+
 
 
 
 nav.navbar {
-  padding: 10px 0 0 5px;
+  padding: 15px 0 0 5px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -120,7 +128,7 @@ nav.navbar {
 }
 
 nav.navbar.scrolled {
-  padding: 5px 0 10px 5px;
+  padding: 10px 0 10px 5px;
   background-color: #121212;
 }
 
@@ -128,7 +136,7 @@ nav.navbar a.navbar-brand {
   width: 9%;
 }
 
-nav.navbar button{
+nav.navbar button {
   float: right;
 }
 
@@ -193,7 +201,7 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-nav button{
+nav button {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -203,8 +211,6 @@ nav button{
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-
 }
 
 nav button:hover {
@@ -381,25 +387,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Experience Css ************/
 
-.company {
+.experience-company {
   display: flex;
   justify-content: space-between;
 }
 
-.experience-bx {
+.experience {
   background: #151515;
   border-radius: 64px;
   text-align: left;
-  padding: 60px 50px;
+  padding: 60px 100px;
   margin-top: -60px;
 }
 
 .experience h1 {
   text-align: center;
+  font-size: 45px;
+}
+
+.experience h2{
+  font-size: 27px;
 }
 
 .experience section {
   padding-top: 3%;
+}
+
+.experience-team{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.experience-desc {
+  font-size: 18px;
 }
 
 
@@ -413,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 100px 50px;
   margin-top: -60px;
 }
 
@@ -449,7 +469,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .inline {
   display: inline-block;
 }
@@ -467,6 +487,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.contact-icon:hover{
+  filter: invert(1);
+  cursor: pointer;
 }
 
 

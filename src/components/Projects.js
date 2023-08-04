@@ -1,11 +1,8 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap"
-import projImg1 from "../assets/images/project-img1.png";
-import projImg2 from "../assets/images/project-img2.png";
+
 import projImg3 from "../assets/images/project-img3.png";
-import altprojImg1 from "../assets/images/proj-img1.jpg"
 import altprojImg2 from "../assets/images/altproject-img2.png"
 import fivehun from "../assets/images/localhost_3000_dashboard.png"
-import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -48,7 +45,7 @@ export const Projects = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <h3> Write to Image </h3>
-                    <img src={projImg3} alt="" />
+                    <a href="https://github.com/Hadi-Fawad/Write-Image" target="_blank"> <img src={projImg3} alt="" /></a>
                 </SwiperSlide>
                 <SwiperSlide>
                     <h3> Stack Farm Overflow </h3>

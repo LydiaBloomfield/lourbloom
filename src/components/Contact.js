@@ -86,10 +86,11 @@ export const Contact = () => {
                                 }
                             </Row>
                         </form> */}
-                        <div className="inline">
-                            <h1 className="inline">lydia.r.bloom@gmail.com <img className="contact-icon" onClick={handleCopyPersonal} style={{width:30, height:30}}src={copy}/></h1>
+                        <div className="">
+                            <h1 className="">lydia.r.bloom@gmail.com <img className="contact-icon" onClick={handleCopyPersonal} style={{width:30, height:30}}src={copy}/></h1>
                             <br></br>
                             <h1 className="inline">lydia.r.bloomfield-1@ou.edu <img className="contact-icon" onClick={handleCopySchool} style={{width:30, height:30}}src={copy}/></h1>
+                            
                         </div>
                     </Col>
                 </Row>

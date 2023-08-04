@@ -19,26 +19,26 @@ import R from "../assets/images/technologies/R.png"
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 7
+            breakpoint: { max: 3000, min: 1024 },
+            items: 7
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 3
+            breakpoint: { max: 1024, min: 464 },
+            items: 3
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
-      //FIX implement scrolling on carousel
-      return(
-        <section className="skill" id = "skills">
+    //FIX implement scrolling on carousel
+    return (
+        <section className="skill" id="skills">
             <Container>
                 <Row>
                     <Col>
@@ -49,56 +49,56 @@ export const Skills = () => {
                             <p></p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={java} alt="image"/>
+                                    <img src={java} alt="image" />
                                     <h5> Java </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={python} alt="image"/>
+                                    <img src={python} alt="image" />
                                     <h5> Python </h5>
                                 </div>
                                 <div className="item">
-                                    <img src={cpp} alt="image"/>
+                                    <img src={cpp} alt="image" />
                                     <h5> C++ </h5>
                                 </div>
-                                {/* FIX this one */}
                                 <div className="item">
-                                    <img src={R} alt="image"/>
-                                    <h5> R </h5>
-                                </div>
-                                <div className="item">
-                                    <img src={javascript} alt="image"/>
+                                    <img src={javascript} alt="image" />
                                     <h5> Javascript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={react} alt="image"/>
+                                    <img src={react} alt="image" />
                                     <h5> React</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={html} alt="image"/>
+                                    <img src={html} alt="image" />
                                     <h5> html</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={css} alt="image"/>
+                                    <img src={css} alt="image" />
                                     <h5> CSS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={sql} alt="image"/>
+                                    <img src={sql} alt="image" />
                                     <h5> SQL</h5>
                                 </div>
+                                {/* FIX this one */}
                                 <div className="item">
-                                    <img src={git} alt="image"/>
+                                    <img src={R} alt="image" />
+                                    <h5> R </h5>
+                                </div>
+                                <div className="item">
+                                    <img src={git} alt="image" />
                                     <h5> git</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={mongodb} alt="image"/>
+                                    <img src={mongodb} alt="image" />
                                     <h5> mongoDB</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={node} alt="image"/>
+                                    <img src={node} alt="image" />
                                     <h5> node.JS</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={gosu} alt="image"/>
+                                    <img src={gosu} alt="image" />
                                     <h5> Gosu </h5>
                                 </div>
                             </Carousel>
@@ -106,7 +106,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp}/>
+            <img className="background-image-left" src={colorSharp} />
         </section>
-      )
+    )
 }
